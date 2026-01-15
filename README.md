@@ -51,4 +51,4 @@ Aplikasi ini bersifat **Open Source** dan dilisensikan di bawah **GNU General Pu
 * **Komersial:** Penggunaan untuk komersial diperbolehkan selama mematuhi aturan open source yang berlaku.
 
 ---
-_Dibuat dengan ❤️ oleh [Ikmal Maulana](https://github.com/bisangoding-id)_
+_Created by [Ikmal Maulana](https://github.com/bisangoding-id)_
