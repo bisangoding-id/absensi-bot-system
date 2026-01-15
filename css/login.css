@@ -1,0 +1,112 @@
+:root {
+            --brand-color: #22a7b8; 
+            --brand-hover: #1b8a99;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .login-container {
+            background: #fff;
+            width: 100%;
+            max-width: 400px;
+            padding: 50px 40px;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+    .user-icon-circle {
+    width: 75px;
+    height: 75px;
+    background-color: #00969A; 
+    background-image: url('../images/logo-login.png'); 
+    background-size: 45px;     
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+
+}
+
+        h2 {
+            font-weight: 300;
+            color: #444;
+            margin-bottom: 35px;
+            font-size: 28px;
+        }
+
+        .form-control {
+            height: 48px;
+            border-radius: 4px; /* Sedikit kotak sesuai gaya gambar awal */
+            border: 1px solid #e0e0e0;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            font-size: 15px;
+            color: #555;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+            border-color: var(--brand-color);
+        }
+
+        .btn-login {
+            background-color: var(--brand-color);
+            border: none;
+            height: 48px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 16px;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .btn-login:hover {
+            background-color: var(--brand-hover);
+            color: #fff;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 25px;
+            font-size: 14px;
+        }
+
+        .custom-control-label {
+            color: var(--brand-color);
+            cursor: pointer;
+        }
+
+        /* Mewarnai checkbox agar sesuai tema */
+        .custom-control-input:checked ~ .custom-control-label::before {
+            background-color: var(--brand-color);
+            border-color: var(--brand-color);
+        }
+
+        .forgot-pass {
+            color: var(--brand-color);
+            text-decoration: none;
+        }
+
+        .forgot-pass:hover {
+            color: var(--brand-hover);
+            text-decoration: underline;
+        }
+
+        .alert {
+            font-size: 14px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }

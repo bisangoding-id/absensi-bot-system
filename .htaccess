@@ -1,0 +1,21 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} (webhook_telegram\.php|webhook_whatsapp\.php) [NC]
+RewriteRule ^app/ - [L]
+
+RewriteRule ^home$ index.php [L]
+
+RewriteRule ^app/.*$ - [F,L]
+RewriteRule ^inc/.*$ - [F,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*[^.\ ]+\.php\ HTTP/
+RewriteRule ^(([^/]+/)*[^.\ ]+)\.php$ $1 [R=301,L]
+
+<FilesMatch "^(config\.php|koneksi\.php|\.htaccess)">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
